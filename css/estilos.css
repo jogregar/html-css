@@ -1,0 +1,267 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+    font-size: 62.5%; /* Reset para REMS - 62.5% = 10px de 16 px */
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.contenedor {
+    margin: 0 7%;
+}
+
+.fondo.inicio{
+    background-image: url("../img/header.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    min-height: 400px;
+}
+
+.contenedor-header {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 7rem;
+    align-items: center;
+}
+
+.logo-imagen {
+    background-image: url("../img/logo.svg");
+}
+
+.menu a {
+    font-family: Roboto, serif;
+    color:white;
+    font-size: 1.6rem;
+    margin-right: 2rem;
+    text-decoration: none;
+}
+
+.menu a:last-of-type{
+    margin: 0;
+}
+
+.texto-pie {
+    font-family: Roboto, serif;
+    font-size: 3rem;
+    color:white;
+    padding-bottom: 7rem;
+}
+
+.mas {
+    font-size: 4rem;
+    text-align: center;
+    padding: 4rem;
+}
+
+.nosotros {
+    text-align: center;
+}
+
+.nosotros2 {
+    display: inline-block;
+    text-align: center;
+    width: 40rem;
+    padding: 0.2rem;
+}
+
+.titulos {
+    font-size: 2.6rem;
+    padding: 2rem;
+    font-weight: bold;
+}
+
+.titulos2 {
+    font-size: 1.7rem;
+}
+
+.titulos3 {
+    font-size: 2.6rem;
+    padding: 2rem;
+    text-align: left;
+}
+
+.titulos4 {
+    font-size: 1.85rem;
+    text-align: left;
+    padding-left: 2rem;
+    line-height: 3rem;
+}
+
+.anuncios {
+    display: inline-block;
+    width: 40rem;
+    border: 0.1rem solid gray;
+    height: 59rem;
+
+}
+
+.precios {
+    color:rgb(42, 177, 42);
+    font-size: 1.85rem;
+    text-align: left;
+    padding-left: 2rem;
+    line-height: 3rem;
+}
+
+div.nosotros div.anuncios img {
+    object-fit: cover;
+    width: auto;
+	height: 30rem;
+}
+
+div.iconos {
+    display:flex;
+    text-align: center;
+
+    justify-content: center;   
+}
+
+div.nosotros div.anuncios div.iconos div img {
+    height: auto;
+    display: inline-block;
+    text-align: center;
+}
+
+div.nosotros div.anuncios div.iconos div {
+    padding: 1.5rem;
+}
+
+.cantidad {
+    margin-top:1rem;
+}
+
+.boton {
+    font-weight: bold;
+    color: white;
+    background-color: rgb(235, 158, 16);
+    text-align: center;
+    border: 0;
+    width: 24rem;
+    height: 4rem;
+}
+
+.boton22 {
+    padding: 4rem;
+    margin-right: 2.6rem;
+    text-align: right;
+}
+
+.boton2 {
+    font-weight: bold;
+    color: white;
+    background-color: rgb(54, 185, 65);
+    text-align: center;
+    border: 0;
+    width: 16rem;
+    height: 4rem;
+}
+
+.contactanos {
+    background: url(../img/encuentra.jpg);
+    width: auto;
+    height: 18rem;
+    background-size: cover;
+    color: white;
+    padding-top: 16rem;
+    padding-left:7rem;
+    padding-bottom: 5rem;
+    font-family: Roboto, serif;
+}
+
+h1 {
+    font-size: 4rem;
+    font-stretch: ultra-expanded;
+}
+
+div.contactanos p {
+    padding: 3rem 0 3rem 0;
+}
+
+.pie{
+    height: 7rem;
+    background-color: rgb(77, 75, 75);
+    font-family: Roboto, serif;
+    color:white;
+    text-decoration: none;
+    padding: 1rem;
+    bottom: 0.5rem;
+}
+
+.contenedor-header2 {
+    font-family: Roboto, serif;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5rem;
+}
+
+.main-btn {
+    display: inline-block;
+    text-align: center; 
+    border: 0;
+    padding: 0 0;
+    height: auto;
+    width: 8rem;
+    border-radius: 0.4rem;
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+    position: relative;
+    z-index: 5;
+    overflow: hidden; 
+
+}
+
+.main-btn::before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    padding: 50%;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: #D6AFAF;
+    -webkit-transform: translate3d(-50%, -50%, 0) scale(0);
+    -moz-transform: translate3d(-50%, -50%, 0) scale(0);
+    -ms-transform: translate3d(-50%, -50%, 0) scale(0);
+    -o-transform: translate3d(-50%, -50%, 0) scale(0);
+    transform: translate3d(-50%, -50%, 0) scale(0);
+    -webkit-transition: all 0.6s linear;
+    -moz-transition: all 0.6s linear;
+    -ms-transition: all 0.6s linear;
+    -o-transition: all 0.6s linear;
+    transition: all 0.6s linear; 
+}
+
+.main-btn:hover {
+    color: black;
+}
+  
+.main-btn:hover::before {
+    -webkit-transform: translate3d(-50%, -50%, 0) scale(1.5);
+    -moz-transform: translate3d(-50%, -50%, 0) scale(1.5);
+    -ms-transform: translate3d(-50%, -50%, 0) scale(1.5);
+    -o-transform: translate3d(-50%, -50%, 0) scale(1.5);
+    transform: translate3d(-50%, -50%, 0) scale(1.5); 
+}
